@@ -1,0 +1,1 @@
+ontem executei os exercicios de git e git hub
