@@ -1,0 +1,32 @@
+h1 {
+    font-family: sans-serif;
+    color: orange;    
+    }
+    p {
+        font-size: 3em;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    body {
+        font-size: 16px;
+    }
+    #lista-sem-ordenar {
+        font-family: fantasy;
+        color: white;
+    }
+    .Mesmas-cores {
+        background-color: aquamarine;
+    }
+
+    #amarelo {
+    background-color: blue;
+    }
+
+    #vermelho {
+        background-color: red;
+    }
+
+    #marrom {
+        background-color: chocolate;
+    }
