@@ -15,11 +15,10 @@
   }
   
   .baloon {
-    width: ;
     position: absolute;
     top: ;
     left: 200px;
-    z-index: 1;
+    z-index: ;
   }
   
   .speech {
@@ -28,6 +27,10 @@
   
   .bowser {
     width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    
   }
 
   p {
