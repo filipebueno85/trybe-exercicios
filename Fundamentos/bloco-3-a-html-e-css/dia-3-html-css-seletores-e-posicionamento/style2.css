@@ -10,3 +10,7 @@ li:hover {
 li:active {
     color: aqua;
 }
+
+ul, ol {
+    list-style: none;
+}
