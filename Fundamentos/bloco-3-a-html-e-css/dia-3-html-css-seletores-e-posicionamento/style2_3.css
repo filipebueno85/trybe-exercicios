@@ -6,7 +6,7 @@ ol li:nth-last-child(even) {
     color: green;
 }
 
-ol li:nth-last-child(odd) {
+ol li:nth-child(odd) {
   text-transform: uppercase;  
 }
 
