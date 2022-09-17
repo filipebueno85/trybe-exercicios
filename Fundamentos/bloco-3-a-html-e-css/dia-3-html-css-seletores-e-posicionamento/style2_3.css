@@ -2,4 +2,11 @@ ol {
     background-color: yellow;
 }
 
+ol li:nth-last-child(even) {
+    color: green;
+}
+
+ol li:nth-last-child(odd) {
+  text-transform: uppercase;  
+}
 
