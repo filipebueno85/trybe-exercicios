@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+main{
+display: inline-block;
+}
+
+header {
+  background-color: aqua;
+
+}
+
 body {
     font-size: 19px;
     font-weight: normal;
@@ -11,16 +20,16 @@ body {
     letter-spacing: .1px;
     line-height: 33px;
     font-family: Georgia, serif;
-    width: 964px;
+    
 }
 
 article {
-  display: block;
+  height: auto;
+  display: inline-block;
   width: 700px;
 }
 
 footer, nav {
-    border-top: 1px gray solid;
     background-color: black;
   }
 
@@ -29,8 +38,8 @@ footer, nav {
   }
 
 h1, h2, h3 {    
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     margin-left: 50px;
 }
 
@@ -47,16 +56,21 @@ p {
     margin-left: 20px;
   }
 aside {
+  height: auto;
     background-color: black;
     color: white;
     display: inline-block; 
-    position: absolute;
+  vertical-align: super;
+  float: right;
     width: 300px;
-    float: right;
     padding: 5px;
     margin: 10px;
     height: 200px;
-    margin-left: 655px;
+    opacity: 1;
+}
+
+aside ul li:hover {
+  color: cyan;
 }
 
 img {
@@ -71,6 +85,7 @@ table {
     border-collapse: collapse;
     width: 30px;
     margin-left: 50px;
+    font-size: 16px;
   }
   
   td, th {
@@ -85,6 +100,7 @@ table {
 
   footer {
     text-align: center;
+    color: white;
   }
 
   #video {
