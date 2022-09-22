@@ -10,4 +10,3 @@ else if (numero < 0) {
 } else {
     console.log('zero');
 }
-
