@@ -3,6 +3,11 @@
 
 let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
-for (index = 0; index < groceryList.length; index++) {
-    console.log(groceryList[index]);
+// for (index = 0; index < groceryList.length; index++) {
+//     console.log(groceryList[index]);
+// }
+
+for (let index = 0; index < groceryList.length; index++) {
+  const element = groceryList[index];
+  console.log(element);
 }

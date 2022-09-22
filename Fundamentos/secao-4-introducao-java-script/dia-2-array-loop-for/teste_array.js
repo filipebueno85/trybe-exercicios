@@ -7,7 +7,9 @@ console.log(menuServices);
 
 // Procure o índice do valor “Portfólio” do array menu:
 
-let indexOfPortfolio = menu[menu.length - 2];
+// let indexOfPortfolio = menu[menu.length - 2]; para acessar nome do array
+let indexOfPortfolio = menu.indexOf('Portfólio');
+
 
 console.log(indexOfPortfolio);
 
