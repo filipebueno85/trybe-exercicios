@@ -31,9 +31,4 @@ switch (pecaDeXadrez.toLowerCase()) {
     default:
         console.log('peça invalida');
         break;
-
-
-
-    
-    
 }
