@@ -15,4 +15,17 @@ if (numerosImpares === 0) {
     console.log('Quantidade de numeros impares encontrados são:' + numerosImpares);
 }
 
+// let numeroDeImpares = 0;
+// let numeroDePares = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] % 2 !== 0) {
+//     numeroDeImpares += 1;
+//   } else {
+//     numeroDePares += 1;
+//   }
+// }
+
+// console.log('Número de ímpares:', numeroDeImpares);
+// console.log('Número de pares:', numeroDePares);
 
