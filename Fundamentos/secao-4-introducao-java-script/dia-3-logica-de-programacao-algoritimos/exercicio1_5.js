@@ -5,7 +5,7 @@ let maiorNumeroPrimo = numeros[0];
 
 for (let index = 2; index <= 50; index += 1) {
     numeros.push(index); 
-    for (let index2 = 2; index2 < numeros.length; index2 += 1) {
+    for (let index2 = 2; index2 < index; index2 += 1) {
     if (index % index2 === 0){
         maiorNumeroPrimo = false;
     } else {
