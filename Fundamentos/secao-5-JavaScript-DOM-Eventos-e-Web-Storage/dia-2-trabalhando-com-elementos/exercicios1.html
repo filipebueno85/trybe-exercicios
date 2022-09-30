@@ -100,16 +100,17 @@
     const elementUlRight = document.createElement('ul');
     elementSectionRight.appendChild(elementUlRight);
     const arrayNumbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-    // const listaNumeros = 0;
-    // for (let index = 0; index < arrayNumbers.length; index += 1) {
-    //     listaNumeros += arrayNumbers.push[index];
-    // };
-    for (let numeros in arrayNumbers) {
+    for (let index = 0; index < arrayNumbers.length; index += 1) {
     const elementLiRight = document.createElement('li');
-    elementLiRight.innerHTML = arrayNumbers[numeros];
+    elementLiRight.innerHTML = arrayNumbers[index];
     elementUlRight.appendChild(elementLiRight);
-    }
-
+    };
+    // for (let numeros in arrayNumbers) {
+    // const elementLiRight = document.createElement('li');
+    // elementLiRight.innerHTML = arrayNumbers[numeros];
+    // elementUlRight.appendChild(elementLiRight);
+    // }
+    
     // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
     // Adicione a classe description nas 3 tags h3 criadas;
     for (let index = 1; index <= 3; index += 1) {
@@ -131,15 +132,24 @@
 // Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
 
 
+
 // Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
 
+// const byTag = document.getElementsByTagName('h3');
+//     const querySelector = document.querySelector('h3');
+//     const selectorAll = document.querySelectorAll('h3');
+// ​
+//     console.log('by tag:', byTag);
+//     console.log('by selector:', querySelector);
+//     console.log('by slector all:', selectorAll);
+// ​
+    const lista = document.querySelectorAll('li');
+    lista[8].remove();
+    lista[9].remove();
+    console.log(lista)
 
-
-
-
-
-
-
+// usando função remove();
+const primeiroHtres = document.getElementsByTagName('h3')[0];
 
 
 
