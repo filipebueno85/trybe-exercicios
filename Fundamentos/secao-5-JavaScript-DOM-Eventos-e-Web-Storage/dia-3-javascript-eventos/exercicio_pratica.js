@@ -55,6 +55,35 @@ const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
   }
   cerateMonthDays();
 
+  // const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  // const sextas = [4, 11, 18, 25];
+  // const feriados = [24, 25, 31];
+  
+  // function criaDias() {
+  //   // seleciona elemento pai
+  //   const elementoPai = document.getElementById('days');
+  
+  //   for (let id = 0; id < decemberDaysList.length; id += 1) {
+  //     // cria o elemento
+  //     const minhaLi = document.createElement('li');
+  //     // atribuir as propriedades
+  //     minhaLi.classList = 'day';
+  //     minhaLi.innerText = decemberDaysList[id];
+  
+  //     if (sextas.includes(decemberDaysList[id])) {
+  //       minhaLi.classList.add('friday');
+  //     };
+  
+  //     if (feriados.includes(decemberDaysList[id])) {
+  //       minhaLi.classList.add('holiday');
+  //     }
+  
+  //     // appendChild
+  //     elementoPai.appendChild(minhaLi);
+  //   }
+  // }
+
+
 //   Implemente uma função que crie dinamicamente um botão com o nome “Feriados”.
 // Sua função deve receber um parâmetro com a string 'Feriados'
 // Adicione a este botão a ID "btn-holiday"
@@ -227,3 +256,12 @@ function atribuirCorAoDia() {
 } 
 atribuirCorAoDia();
 
+// Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto “COMPROMISSOS”, adiciona o item à lista “MEUS COMPROMISSOS” ao clicar no botão “ADICIONAR”.
+// Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em “ADICIONAR”.
+// Ao pressionar a tecla “enter” o evento também deverá ser disparado.
+// Dica - Propriedade: key.
+
+// function adicionaCompromisso() {
+//   const getIput = document.querySelector('#task-input');
+//   const 
+// }
