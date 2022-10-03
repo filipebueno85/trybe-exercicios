@@ -160,8 +160,70 @@ dayMouseOut()
 // A função deve receber como parâmetro a string com o nome da tarefa (ex: “cozinhar”) e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
 
+function novaTarefa (tarefa) {
+  const getTarefa = document.querySelector('.my-tasks');
+  const nomeTarefa =  document.createElement('span');
+  
+  nomeTarefa.innerHTML = tarefa;
 
+  getTarefa.appendChild(nomeTarefa);
 
+};
+novaTarefa('Projeto');
 
+// Implemente uma função que adicione uma legenda com cor para a tarefa.
+// Essa função deverá receber como parâmetro uma string (‘cor’) e criar dinamicamente um elemento de tag <div> com a classe task
+// O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks"
 
+function adicionaLegenda (color) {
+  const getTarefa = document.querySelector('.my-tasks');
+  const tarefas = document.createElement('div');
+ 
+  tarefas.className = 'task';
+  tarefas.style.backgroundColor = color;
+  getTarefa.appendChild(tarefas);
+};
+adicionaLegenda('red');
+
+// Implemente uma função que selecione uma tarefa.
+// Adicione um evento que ao clicar no elemento com a tag <div> referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
+
+function selectTarefa () {
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let tarefa = document.querySelector('.task');
+  tarefa.addEventListener('click', function(event) {
+    if (tarefaSelecionada.length === 0){
+      event.target.className = 'task selected'; 
+    }else {
+      event.target.className = 'task';
+    }
+  });
+}
+selectTarefa();
+
+// Implemente uma função que atribua a cor da tarefa ao dia do calendário.
+// Adicione um evento que, ao clicar em um dia do mês no calendário, atribua a esse dia a cor da legenda da sua tarefa selecionada.
+// Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119)
+
+function atribuirCorAoDia() {
+  const tarefaSelecionada = document.getElementsByClassName('task selected');
+  const days = document.querySelector('#days');
+  const getTarefa = document.querySelector('.my-tasks');
+  const tarefa = document.querySelector('.task');
+  const tarefaColor = tarefa.style.backgroundColor;
+
+  days.addEventListener('click', function(event) {
+    let eventTargetColor = event.target.style.color;
+
+    if (tarefaSelecionada.length > 0 && eventTargetColor !== tarefaColor) {
+      let color = tarefaSelecionada[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === tarefaColor) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });  
+} 
+atribuirCorAoDia();
 
