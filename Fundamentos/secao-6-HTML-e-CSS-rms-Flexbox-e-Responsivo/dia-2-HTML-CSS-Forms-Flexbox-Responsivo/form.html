@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="form.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <form action="" method="get">
+    <form class="container mb-3" action="" method="get">
         <fieldset>
-            <label for="nome-completo">Nome:</label>
-            <input type="text" name="nomeCompleto" id="nome-completo" maxlength="40" minlength="10">
-            <br>
-            <br>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" minlength="10" maxlength="50">
-            <br>
-            <br>
-            <h3>Qual seu destino preferido?</h3>
-            <input type="radio" name="destino" id="cidade">
-            <label for="cidade">Cidade</label>
-            <input type="radio" name="destino" id="campo">
-            <label for="campo">Campo</label>
-            <input type="radio" name="destino" id="praia">
-            <label for="praia">Praia</label>
-            <input type="radio" name="destino" id="montanhas">
-            <label for="montanhas">Montanhas</label>
-            <br>
-            <h3>Digite aqui sua resposta:</h3>
-            <textarea name="razao" id="quadro-texto" cols="50" rows="10"  placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?" maxlength="500"></textarea>
-            <br>
-            <br>
-            <label for="data">Qual a melhor data para realizar sua viagem?</label>
-            <input type="date" name="data" id="data">
-            <br>
-            <br>
-            <label for="trybe-oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-            <input type="checkbox" name="checkbox" id="trybe-oportunidades">
-            <br>
-            <label for="termos">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-            <input type="checkbox" name="checkbox" id="termos">
+            <section class="container mb-3">
+                <label class="form-label" for="nome-completo">Nome:</label>
+                <input class="form-control" type="text" name="nomeCompleto" id="nome-completo" maxlength="40"
+                    minlength="10">
+            </section>
+            <section class="container mb-3">
+                <label class="form-label" for="email">E-mail</label>
+                <input class="form-control" type="email" name="email" id="email" minlength="10" maxlength="50">
+            </section>
+            <section class="container mb-3">
+                <h3 class="h3">Qual seu destino preferido?</h3>
+                <input class="form-check-input" type="radio" name="destino" id="cidade">
+                <label class="form-check-label" for="cidade">Cidade</label>
+                <input class="form-check-input" type="radio" name="destino" id="campo">
+                <label class="form-check-label" for="campo">Campo</label>
+                <input class="form-check-input" type="radio" name="destino" id="praia">
+                <label class="form-check-label" for="praia">Praia</label>
+                <input class="form-check-input" type="radio" name="destino" id="montanhas">
+                <label class="form-check-label" for="montanhas">Montanhas</label>
+            </section>
+            <section class="container mb-3">
+                <h3 class="h3">Digite aqui sua resposta:</h3>
+                <textarea class="form-control" name="razao" id="quadro-texto" cols="50" rows="5"
+                    placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?"
+                    maxlength="500"></textarea>
+            </section>
+            <section class="container mb-3">
+                <label class="form-label" for="data">Qual a melhor data para realizar sua viagem?</label>
+                <input class="form-control" type="date" name="data" id="data">
+            </section>
+            <section class="container mb-3">
+                <label class="form-check-label" for="trybe-oportunidades">Gostaria de receber outras incríveis
+                    oportunidades oferecidas pela Trybe?</label>
+                <input class="form-check-input" type="checkbox" name="checkbox" id="trybe-oportunidades">
+            </section>
+            <section class="container mb-3">
+                <label class="form-check-label" for="termos">Concordo que imagens das minhas férias poderão ser usadas
+                    na divulgação de concursos futuros.</label>
+                <input class="form-check-input" type="checkbox" name="checkbox" id="termos">
+            </section>
         </fieldset>
     </form>
-    <button type="submit" id="submit-btn" disabled>Enviar</button>
-    <button type="reset" id="reset-btn">limpar</button>
-
-    <script src="scriptform.js"></script>   
+    <section class="container mb-3">
+        <button class="btn btn-light" type="submit" id="submit-btn" disabled>Enviar</button>
+        <button class="btn btn-light" type="reset" id="reset-btn">limpar</button>
+    </section>
+    <script src="scriptform.js"></script>
 </body>
+
 </html>

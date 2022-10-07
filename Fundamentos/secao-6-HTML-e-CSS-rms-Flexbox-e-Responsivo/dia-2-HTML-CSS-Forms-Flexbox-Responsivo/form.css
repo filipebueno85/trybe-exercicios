@@ -1,0 +1,16 @@
+body{
+  background-color: darkmagenta;
+  margin: 40px auto;
+}
+
+form {
+  background-color: darkorchid;
+  color: white;
+  max-width: 80%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.form-control{
+ width: 80%;
+}
