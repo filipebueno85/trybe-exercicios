@@ -1,6 +1,16 @@
-body{
+body {
   background-color: darkmagenta;
   margin: 40px auto;
+  font-family: 'Itim', cursive;
+}
+
+header {
+  background-color: darkorchid;
+  color: white;
+  max-width: 80%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
 }
 
 form {
@@ -9,8 +19,9 @@ form {
   max-width: 80%;
   padding: 20px;
   margin: 20px 0;
+  border-radius: 20px;
 }
 
-.form-control{
- width: 80%;
+.form-control {
+  width: 80%;
 }
