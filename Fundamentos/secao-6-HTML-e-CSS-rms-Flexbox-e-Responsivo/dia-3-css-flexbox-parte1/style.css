@@ -5,6 +5,14 @@
     font-family: 'Ubuntu';
   }
   
+  header{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .header-img {
     width: 70px;
   }
@@ -16,4 +24,45 @@
   .social-img {
     width: 25px;
     margin-left: 10px;
+  }
+
+  .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+   .imagens-dev {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:13px auto;
+    width: 40%;
+  }
+
+  hr {
+    margin-top: 10px;
+    width: 25%;
+  }
+
+  .imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20%;
+    background-color:rgb(240, 240, 240);
+    justify-content: center;
+    height: 180px;
+    box-shadow: 2px 3px rgba(161, 161, 161, 0.5);
+    margin: 5px;
+    width: 150px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    height: 50px;
   }
