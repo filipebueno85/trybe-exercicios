@@ -26,7 +26,11 @@ botaoLimpar.addEventListener("click", function limparFormulario(event) {
 function enableSubmit() {
   const agreement = document.querySelector("#termos");
   botaoEnviar.disabled = !agreement.checked;
-}
+};
+
+
+
+
 
 // var picker = new Pikaday({
 //   field: document.getElementById('data'),
@@ -118,3 +122,27 @@ function handleSubmit(event) {
 
 //     botaoEnviar.addEventListener('click', handleSubmit);
 //   };
+
+window.addEventListener('DOMContentLoaded', function()
+{
+    let $min = document.querySelector('.real [name="realDPX-min"]'),
+        $max = document.querySelector('.real [name="realDPX-max"]');
+
+    $min.DatePickerX.init({
+        mondayFirst: true,
+        minDate    : new Date(2022, 15, 10),
+        maxDate    : $max
+    });
+
+    $max.DatePickerX.init({
+        mondayFirst: true,
+        minDate    : $min,
+        maxDate    : function()
+        {
+            let date = new Date();
+            return new Date().setDate(date.getDate() + 10);
+        },
+        clearButton: false
+    });
+
+});

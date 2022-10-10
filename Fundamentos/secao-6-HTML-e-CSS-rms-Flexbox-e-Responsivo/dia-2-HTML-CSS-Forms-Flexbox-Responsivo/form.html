@@ -72,8 +72,12 @@
             <!-- data -->
 
             <section class="container mb-3">
-                <label class="form-label" for="data">Qual a melhor data para realizar sua viagem?</label>
-                <input class="form-control" type="date" name="data" id="data">
+                <label class="form-label real" for="data">
+                <input class="form-control" type="text" name="realDPX-min" id="data">
+            </label>
+                <label class="form-label real"for="data">
+                <input class="form-control" type="text" name="realDPX-max" id="data">
+            </label>
             </section>
 
             <!-- opçoes de check -->
@@ -89,16 +93,15 @@
                 <input class="form-check-input" type="checkbox" name="checkbox" id="termos">
             </section>
         </fieldset>
+        <section class="container mb-3">
+            <button class="btn btn-light" type="submit" id="submit-btn" disabled>Enviar</button>
+            <button class="btn btn-light" type="reset" id="reset-btn">limpar</button>
+        </section>
     </form>
 
-
-
-    <section class="container mb-3">
-        <button class="btn btn-light" type="submit" id="submit-btn" disabled>Enviar</button>
-        <button class="btn btn-light" type="reset" id="reset-btn">limpar</button>
-    </section>
-
+    
     <script src="scriptform.js"></script>
+    <script src="dist/js/DatePickerX.min.js"></script>
 </body>
 
 </html>
