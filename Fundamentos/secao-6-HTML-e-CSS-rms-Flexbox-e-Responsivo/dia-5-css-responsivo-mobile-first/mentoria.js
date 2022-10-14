@@ -15,7 +15,7 @@ function enviarBotao() {
     botao.disabled = false;
   }
 };
-enviarBotao();
+
 
 
 
