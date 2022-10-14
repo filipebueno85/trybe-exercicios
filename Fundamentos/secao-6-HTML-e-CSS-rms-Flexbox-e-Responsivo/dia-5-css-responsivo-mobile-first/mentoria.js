@@ -13,6 +13,8 @@ function enviarBotao() {
 
   if (nome.value.length > 0 && sobrenome.value.length > 0) {
     botao.disabled = false;
+  } else {
+    botao.disabled = true;
   }
 };
 
