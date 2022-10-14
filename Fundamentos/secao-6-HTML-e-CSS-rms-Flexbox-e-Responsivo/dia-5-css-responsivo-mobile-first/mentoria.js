@@ -11,7 +11,7 @@ sobrenome.addEventListener('keyup', enviarBotao);
 
 function enviarBotao() {
 
-  if (nome.value.length > 0 && sobrenome.value.length > 0 && cont === 1) {
+  if (nome.value.length > 0 && sobrenome.value.length > 0) {
     botao.disabled = false;
   }
 };
