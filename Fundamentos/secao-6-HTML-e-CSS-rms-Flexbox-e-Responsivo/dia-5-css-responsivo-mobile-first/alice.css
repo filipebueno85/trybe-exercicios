@@ -1,0 +1,131 @@
+/* html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+  }
+
+  #titulo {
+    margin: auto;
+    font-size: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #ul1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 200px;
+    list-style: none;
+  }
+
+  .aside-one {
+    margin: 4.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+  }
+
+  .capitulos {
+    align-self: center;
+  }
+
+ .aside-two {
+    margin: 4.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+ }
+
+ .main-content {
+   margin: 4.5%;
+ }
+ */
+
+
+ html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  p {
+    padding: 20px;
+  }
+  
+  /* TODO */
+  
+  /* Aqui está o primeiro breakpoint e os estilos definidos para ele */
+  
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: lightcoral;
+      font-family: sans-serif;
+    }
+    .container {
+      flex-direction: column;
+    }
+  
+    p {
+      padding: 0 5px;
+      line-height: 1.5em;
+    }
+  
+    /* TODO */
+  }
+  
+  /* Aqui está o segundo breakpoint e os estilos definidos para ele */
+  
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    /* TODO */
+  }
+  
+  /* Aqui está o terceiro breakpoint e os estilos definidos para ele */
+  
+  @media screen and (min-width: 1000px) {
+    body {
+      background-color: lightgreen;
+    }
+  
+    .container {
+      flex-wrap: nowrap;
+    }
+  
+    /* TODO */
+  }
