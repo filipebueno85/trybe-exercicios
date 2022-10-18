@@ -41,7 +41,7 @@ const customerInfo = (order) => {
   const numero = order['address']['number'];
   const apartamento = order['address']['apartment'];
   const atendente = order.order.delivery.deliveryPerson;
-  
+
   return `Olá, ${atendente}, entrega para: ${nomeCliente} Telefone ${telefone} R ${rua} Nº: ${numero} Apartamento: ${apartamento}`;
 
 
