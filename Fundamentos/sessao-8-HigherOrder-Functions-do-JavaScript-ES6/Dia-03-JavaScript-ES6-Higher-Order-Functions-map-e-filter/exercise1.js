@@ -132,3 +132,7 @@ const authorWith3DotsOnName = (array) => {
   })[0].name;
 }
 console.log(authorWith3DotsOnName(books));
+
+// function authorWith3DotsOnName() {
+//   return books.find((book) => /([A-Z][.][ ]){3}/.test(book.author.name));
+//  }
