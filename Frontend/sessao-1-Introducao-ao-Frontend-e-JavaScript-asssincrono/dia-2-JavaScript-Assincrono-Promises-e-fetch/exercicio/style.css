@@ -1,0 +1,16 @@
+body {
+  background-color: pink;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blueviolet;
+  font-family: 'Courier New', Courier, monospace;
+  /* padding: 10px 30px;S */
+}
+
+#image {
+  width: 200px;
+}
