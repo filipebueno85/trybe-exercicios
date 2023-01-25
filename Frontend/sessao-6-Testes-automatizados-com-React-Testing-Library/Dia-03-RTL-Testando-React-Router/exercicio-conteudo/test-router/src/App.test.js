@@ -44,6 +44,8 @@ it('deve renderizar o componente Home', () => {
 });
 });
 
+describe('teste para pagina Not Found', () => {
+
 it('deve testar um caminho não existente e a renderização do Not Found', () => {
   const { history } = renderWithRouter(<App />);
 
@@ -55,6 +57,9 @@ it('deve testar um caminho não existente e a renderização do Not Found', () =
     { name: 'Página não encontrada' });
   expect(notFoundTitle).toBeInTheDocument();
 });
+});
+
+describe('teste individual para componentes', () => {
 
 it('deve renderizar o componente About (apenas componente)', () => {
   renderWithRouter(<About />);
@@ -70,4 +75,5 @@ it('deve renderizar o componente Home (apenas componente)', () => {
   const homeTitle = screen.getByRole('heading',
     { name: 'Você está na página Início' });
   expect(homeTitle).toBeInTheDocument();
+});
 });
