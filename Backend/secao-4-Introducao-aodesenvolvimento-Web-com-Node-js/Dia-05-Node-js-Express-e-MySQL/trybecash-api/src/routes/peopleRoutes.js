@@ -54,7 +54,8 @@ router.put('/:id', async (req, res) => {
       res.status(404).json({ message: 'Pessoa não encontrada' });
     }
   } catch (err) {
-    res.status(500).json({ message: err.sqlMessage });
+    const message = err.sqlMessage;
+    res.status(500).json({ message });
   }
 });
 
