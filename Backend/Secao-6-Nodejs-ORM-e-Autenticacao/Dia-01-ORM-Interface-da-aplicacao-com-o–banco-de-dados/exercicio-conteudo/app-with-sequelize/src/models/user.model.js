@@ -6,6 +6,11 @@ const UserModel = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     phoneNum: DataTypes.STRING,
   });
+  // const User = sequelize.define('User', {
+  //   fullName: DataTypes.STRING,
+  //   email: DataTypes.STRING,
+  //   phoneNum: DataTypes.STRING,
+  // }, {tableName: 'Xablaus'});
   (async () => {
     await sequelize.sync({ force: true });
     // const sara = User.build({

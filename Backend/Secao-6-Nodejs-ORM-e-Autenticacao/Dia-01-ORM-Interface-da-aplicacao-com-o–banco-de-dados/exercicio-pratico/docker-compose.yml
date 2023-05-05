@@ -1,0 +1,31 @@
+version: '3.1'
+services:
+  mysql:
+    image: mysql:8.0.32
+    container_name: books-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=senha-mysql
+    ports:
+      - 3306:3306
+  api:
+    container_name: node-book
+    image: node:16
+    restart: always
+    ports:
+      - 3001:3001
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=senha-mysql
+      - MYSQL_DATABASE=orm_books
+      - MYSQL_HOST=books-mysql
+      - SERVER_PORT=3001
+    volumes:
+      - ./:/usr/app
+    working_dir: /usr/app
+    command: bash
+    # As duas opções abaixo correspondem ao -it
+    tty: true # -t
+    stdin_open: true #-i 
+    depends_on:
+      - mysql
+
