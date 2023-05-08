@@ -1,0 +1,22 @@
+{
+  "name": "conteudo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "init": "^0.1.2",
+    "mysql2": "^3.2.4",
+    "nodemon": "2.0.15",
+    "sequelize": "^6.31.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.0"
+  }
+}
